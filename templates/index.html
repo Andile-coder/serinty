@@ -1,0 +1,17 @@
+{% extends "base.html"%} {% block content %}
+<section>
+  <div class="section-cont">
+    <div class="text">
+      <h1>{{section.title}}</h1>
+      <p>{{section.description}}</p>
+    </div>
+    <div class="image">
+      <img src="{{get_url(path='images/group.png')}}" alt="" />
+    </div>
+  </div>
+
+  <div class="extra-cont">
+    <p>{{section.content | safe}}</p>
+  </div>
+</section>
+{% endblock %}

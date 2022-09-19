@@ -1,0 +1,24 @@
+@font-face {
+  font-family: OrigoPro;
+  src: url("../static/fonts/OrigoPro-Regular.woff") format("woff");
+}
+body {
+  color: #004235;
+  background: url("images/giraffe.svg");
+  background-size: 150%;
+  font-family: OrigoPro, sans-serif;
+}
+
+.hero {
+  padding-top: 110px;
+}
+.hero .section-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+  font-size: 22px;
+}
+.hero .section-cont .text {
+  width: 50%;
+}/*# sourceMappingURL=home.css.map */
