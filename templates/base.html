@@ -7,18 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="{{get_url(path='navbar.css')}}" />
     <link rel="stylesheet" href="{{get_url(path='home.css')}}" />
-    <title>Document</title>
+
+    <script
+      src="https://kit.fontawesome.com/928fd3be24.js"
+      crossorigin="anonymous"
+    ></script>
+    {% if page.title %}
+    <title>{{ page.title }} | {{ config.title }}</title>
+    {% else %}
+    <title>{{ config.title }}</title>
+    {% endif %}
   </head>
   <body>
     <header>{{ macros::render_header() }}</header>
 
     <div class="hero">{% block content %}{% endblock %}</div>
+
+    <footer>
+      <div></div>
+    </footer>
     <script>
       function myFunction() {
         var element = document.body;
         element.classList.toggle("dark-mode");
         console.log("clicked");
       }
+
+      function myNavigate(value) {}
     </script>
   </body>
 </html>

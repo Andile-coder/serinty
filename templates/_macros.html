@@ -8,29 +8,36 @@
   <!-- NAVIGATION MENU -->
   <ul class="nav-links">
     <!-- USING CHECKBOX HACK -->
-    <div class="mobile-nav">
-      <select name="drop-down" id="drop-down">
-        <option value="one">One</option>
-        <option value="two">Two</option>
-        <option value="three">Three</option>
-      </select>
-      <div class="checkbox">
-        <input
-          onclick="myFunction()"
-          type="checkbox"
-          class="switch"
-          id="b1"
-          checked
-        />
-      </div>
-      <input type="checkbox" id="checkbox_toggle" />
-      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-    </div>
 
+    <div class="mobile-nav">
+      <select onchange="window.location.href=this.value; value=this.value">
+        <option value="/fr">
+          <a href="#"> <i class="fa-solid fa-flag-usa">FR</i></a>
+        </option>
+        <option value="/#">
+          <i class="fa-regular fa-flag-{{config.extra.usa_icon}}">EN</i>
+        </option>
+      </select>
+
+      <div class="checkbox">
+        <i
+          onclick="myFunction()"
+          class="fa fa-sun-o"
+          style="font-size: 36px"
+        ></i>
+        <i
+          onclick="myFunction()"
+          class="fa fa-moon-o"
+          style="font-size: 36px"
+        ></i>
+      </div>
+    </div>
+    <input type="checkbox" id="checkbox_toggle" />
+    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
     <!-- NAVIGATION MENUS -->
     <div class="menu">
-      {% for item in config.extra.navbar_items %} {% for nav in item.nav_items
-      %}
+      {% for item in config.extra.navbar_items %} {% if lang == item.code %} {%
+      for nav in item.nav_items %}
       <li class="services">
         <a href="#"> {{nav.name}} </a>
 
@@ -43,25 +50,31 @@
         {%endif%}
       </li>
 
-      {% endfor %} {% endfor %}
-      <li class="languages">
-        <select name="drop-down" id="drop-down">
-          <option value="one">One</option>
-          <option value="two">Two</option>
-          <option value="three">Three</option>
+      {% endfor %} {% endif %} {% endfor %}
+
+      <div class="remove_on_mobile">
+        <select onchange="window.location.href=this.value; value=this.value">
+          <option value="/fr">
+            <a href="#"> <i class="fa-solid fa-flag-usa">FR</i></a>
+          </option>
+          <option value="/#">
+            <i class="fas fa-usa">EN</i>
+          </option>
         </select>
-      </li>
-      <li class="li_checkbox">
+
         <div class="checkbox">
-          <input
+          <i
             onclick="myFunction()"
-            type="checkbox"
-            class="switch"
-            id="b1"
-            checked
-          />
+            class="fa fa-sun-o"
+            style="font-size: 36px"
+          ></i>
+          <i
+            onclick="myFunction()"
+            class="fa fa-moon-o"
+            style="font-size: 36px"
+          ></i>
         </div>
-      </li>
+      </div>
     </div>
   </ul>
 </nav>

@@ -26,7 +26,8 @@ title = "My blog"
 [extra]
 # Put all your custom variables here
 logo_path = 'images/serinty.png'
-
+usa = 'images/usa_flag.svg'
+usa_icon='usa'
 navbar_items = [
     { code = "en", nav_items = [
         { url = "$BASE_URL/", name = "Home",dropdown=[] },
@@ -35,4 +36,11 @@ navbar_items = [
         { url = "$BASE_URL/#", name = "Pricing",dropdown=[] },
         { url = "$BASE_URL/#", name = "Contact",dropdown=[] },
     ] },
+    {code="fr",nav_items = [
+        { url = "$BASE_URL/", name = "Domicile",dropdown=[] },
+        { url = "$BASE_URL/#", name = "Sur",dropdown=[] },
+        { url = "$BASE_URL/#", name = "Services",dropdown=["service-1","service-2","service-3"] },
+        { url = "$BASE_URL/#", name = "Tarification",dropdown=[] },
+        { url = "$BASE_URL/#", name = "Contactez",dropdown=[] },
+        ]},
 ]

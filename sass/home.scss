@@ -13,6 +13,13 @@ body {
   background-size: 150%;
   font-family: "Origo Pro";
   font-weight: Regular;
+  .fa-sun-o {
+    display: none;
+  }
+  .fa-moon-o {
+    display: block;
+    color: #000000;
+  }
 }
 .dark-mode {
   background-color: #000000;
@@ -20,6 +27,13 @@ body {
   color: #ccffdb;
   font-family: "Origo Pro";
   font-weight: Regular;
+  .fa-moon-o {
+    display: none;
+  }
+  .fa-sun-o {
+    display: block;
+  }
+
   a:visited {
     color: #5e5e5e;
   }
@@ -50,6 +64,13 @@ body {
   }
 }
 @media (max-width: 768px) {
+  .dark-mode {
+    select {
+      color: #ccffdb;
+      font-family: "Origo Pro";
+      font-weight: Regular;
+    }
+  }
   .hero {
     padding-top: 10px;
     .section-cont {
