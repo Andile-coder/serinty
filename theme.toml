@@ -1,10 +1,10 @@
 name = "Serinty"
 description = "Home page site generator"
 license = "MIT"
-homepage = "https://github.com/getzola/hyde"
-# The minimum version of Zola required
+homepage = ""
+
 min_version = "0.4.0"
-# An optional live demo URL
+
 demo = ""
 
 # Any variable there can be overridden in the end user `config.toml`
@@ -12,8 +12,9 @@ demo = ""
 # be merged with user data, some kind of prefix or nesting is preferable
 # Use snake_casing to be consistent with the rest of Zola
 [extra]
-
+logo_path
+navbar_items
 # The theme author info: you!
 [author]
-name = "Vincent Prouillet"
-homepage = "https://vincent.is"
+name = "Andile Masela"
+homepage = ""
