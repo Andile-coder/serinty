@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://zola.com/navbar.css" />
+    <link rel="stylesheet" href="https://zola.com/home.css" />
+
+    <script
+      src="https://kit.fontawesome.com/928fd3be24.js"
+      crossorigin="anonymous"
+    ></script>
+    
+    <title></title>
+    
+  </head>
+  <body>
+    <header>
+
+<nav class="navbar">
+  <!-- LOGO -->
+  <div class="logo">
+    <img src="https://zola.com/images/serinty.png" alt="logo" />
+  </div>
+  <!-- NAVIGATION MENU -->
+  <ul class="nav-links">
+    <!-- USING CHECKBOX HACK -->
+
+    <div class="mobile-nav">
+      <select onchange="window.location.href=this.value; value=this.value">
+        <option value="/fr">
+          <a href="#"> <i class="fa-solid fa-flag-usa">FR</i></a>
+        </option>
+        <option value="/#">
+          <i class="fa-regular fa-flag-usa">EN</i>
+        </option>
+      </select>
+
+      <div class="checkbox">
+        <i
+          onclick="myFunction()"
+          class="fa fa-sun-o"
+          style="font-size: 36px"
+        ></i>
+        <i
+          onclick="myFunction()"
+          class="fa fa-moon-o"
+          style="font-size: 36px"
+        ></i>
+      </div>
+    </div>
+    <input type="checkbox" id="checkbox_toggle" />
+    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+    <!-- NAVIGATION MENUS -->
+    <div class="menu">
+          
+      <li class="services">
+        <a href="#"> Domicile </a>
+
+        
+      </li>
+
+      
+      <li class="services">
+        <a href="#"> Sur </a>
+
+        
+      </li>
+
+      
+      <li class="services">
+        <a href="#"> Services </a>
+
+        
+        <ul class="dropdown">
+          
+          <li><a href="#">service-1</a></li>
+          
+          <li><a href="#">service-2</a></li>
+          
+          <li><a href="#">service-3</a></li>
+          
+        </ul>
+        
+      </li>
+
+      
+      <li class="services">
+        <a href="#"> Tarification </a>
+
+        
+      </li>
+
+      
+      <li class="services">
+        <a href="#"> Contactez </a>
+
+        
+      </li>
+
+        
+
+      <div class="remove_on_mobile">
+        <select onchange="window.location.href=this.value; value=this.value">
+          <option value="/fr">
+            <a href="#"> <i class="fa-solid fa-flag-usa">FR</i></a>
+          </option>
+          <option value="/#">
+            <i class="fas fa-usa">EN</i>
+          </option>
+        </select>
+
+        <div class="checkbox">
+          <i
+            onclick="myFunction()"
+            class="fa fa-sun-o"
+            style="font-size: 36px"
+          ></i>
+          <i
+            onclick="myFunction()"
+            class="fa fa-moon-o"
+            style="font-size: 36px"
+          ></i>
+        </div>
+      </div>
+    </div>
+  </ul>
+</nav>
+
+</header>
+
+    <div class="hero">
+<section>
+  <div class="section-cont">
+    <div class="text">
+      <h1>Nous aidons à propulser des millions d&#x27;entreprises dans plus de 100 pays</h1>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#x27;s standard dummy text ever since the 1500s.</p>
+    </div>
+    <div class="image">
+      <img src="https://zola.com/images/group.png" alt="" />
+    </div>
+  </div>
+
+  <div class="extra-cont">
+    <p></p>
+  </div>
+</section>
+</div>
+
+    <footer>
+      <div></div>
+    </footer>
+    <script>
+      function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+        console.log("clicked");
+      }
+
+      function myNavigate(value) {}
+    </script>
+  </body>
+</html>
